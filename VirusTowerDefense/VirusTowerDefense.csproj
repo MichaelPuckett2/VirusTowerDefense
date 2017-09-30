@@ -103,6 +103,10 @@
     <Compile Include="Models\Enemy\Malware.cs" />
     <Compile Include="Models\Enemy\PiratedGame.cs" />
     <Compile Include="Models\Enemy\Spyware.cs" />
+    <Compile Include="Models\Towers\AntiMalware.cs" />
+    <Compile Include="Models\Towers\AntiVirus.cs" />
+    <Compile Include="Models\Towers\Firewall.cs" />
+    <Compile Include="Models\Towers\Tower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
