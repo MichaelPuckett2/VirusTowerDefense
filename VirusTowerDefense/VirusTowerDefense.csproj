@@ -98,7 +98,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Enemy\BotAttack.cs" />
     <Compile Include="Models\Enemy\Enemy.cs" />
+    <Compile Include="Models\Enemy\Malware.cs" />
+    <Compile Include="Models\Enemy\PiratedGame.cs" />
+    <Compile Include="Models\Enemy\Spyware.cs" />
     <Compile Include="Models\Towers\AntiMalware.cs" />
     <Compile Include="Models\Towers\AntiVirus.cs" />
     <Compile Include="Models\Towers\Firewall.cs" />
