@@ -5,7 +5,7 @@
         public PiratedGame()
         {
             Health = 20;
-            Speed = .5;
+            Speed = 0.5;
         }
     }
 }
