@@ -5,8 +5,7 @@
         public Spyware()
         {
             Health = 20;
-            Speed = 1;
-            Damage = 15;
+            Speed = .5;
         }
     }
 }
