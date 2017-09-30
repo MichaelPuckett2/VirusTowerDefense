@@ -101,6 +101,7 @@
     <Compile Include="Models\Enemy\BotAttack.cs" />
     <Compile Include="Models\Enemy\Enemy.cs" />
     <Compile Include="Models\Enemy\Malware.cs" />
+    <Compile Include="Models\Enemy\PiratedGame.cs" />
     <Compile Include="Models\Enemy\Spyware.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
