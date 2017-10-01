@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VirusTowerDefense.Models.Enemy;
+﻿using VirusTowerDefense.Models.Enemy;
+using VirusTowerDefense.Models.Towers;
 
-namespace VirusTowerDefense.ScoreController
+namespace VirusTowerDefense.MoneyController
 {
-    public class ScoreController
+    public class MoneyController
     {
         public int Money { get; set; }
 
@@ -47,31 +43,61 @@ namespace VirusTowerDefense.ScoreController
             switch (enemy)
             {
                 case BotAttack botAttack:
-                    value = 20;
-                    break;
-
-                case Malware malware:
-                    value = 10;
-                    break;
-
-                case PiratedGame piratedGame:
                     value = 5;
                     break;
 
-                case Spyware spyware:
+                case Malware malware:
                     value = 15;
+                    break;
+
+                case PiratedGame piratedGame:
+                    value = 50;
+                    break;
+
+                case Spyware spyware:
+                    value = 10;
                     break;
 
                 default:
                     break;
             }
 
-            Score += value;
+            Money += value;
+        }
+
+        public void PurchasedTower(Tower tower)
+        {
+            var value = 0;
+
+            switch (tower)
+            {
+                case AntiMalware antiMalware:
+                    value = 100;
+                    break;
+
+                case AntiVirus antiVirus:
+                    value = 150;
+                    break;
+
+                case Firewall firewall:
+                    value = 200;
+                    break;
+
+                case Tower tower:
+                    value = 10;
+                    break;
+
+                default:
+                    break;
+            }
+
+            Money -= value;
+
         }
 
         public void WaveComplete(int waveNumber)
         {
-            Score += 1000;
+            Money += 500;
         }
     }
 }
