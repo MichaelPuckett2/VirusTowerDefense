@@ -108,6 +108,7 @@
     <Compile Include="Models\Towers\AntiVirus.cs" />
     <Compile Include="Models\Towers\Firewall.cs" />
     <Compile Include="Models\Towers\Tower.cs" />
+    <Compile Include="MoneyController\MoneyController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScoreController\ScoreController.cs" />
   </ItemGroup>
