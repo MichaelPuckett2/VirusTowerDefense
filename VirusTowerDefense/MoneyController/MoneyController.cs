@@ -9,7 +9,7 @@ namespace VirusTowerDefense.ScoreController
 {
     public class MoneyController
     {
-        public int Score { get; set; }
+        public int Money { get; set; }
 
         public void VirusEnteredKernal(Enemy enemy)
         {
