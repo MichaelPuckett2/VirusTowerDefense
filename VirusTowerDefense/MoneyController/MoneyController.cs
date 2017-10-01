@@ -1,11 +1,11 @@
 ﻿using VirusTowerDefense.Models.Enemy;
 using VirusTowerDefense.Models.Towers;
 
-namespace VirusTowerDefense.ScoreController
+namespace VirusTowerDefense.MoneyController
 {
     public class MoneyController
     {
-        public int Score { get; set; }
+        public int Money { get; set; }
 
         public void VirusEnteredKernal(Enemy enemy)
         {
@@ -33,7 +33,7 @@ namespace VirusTowerDefense.ScoreController
                     break;
             }
 
-            Score -= value;
+            Money -= value;
         }
 
         public void VirusDefeated(Enemy enemy)
@@ -62,7 +62,7 @@ namespace VirusTowerDefense.ScoreController
                     break;
             }
 
-            Score += value;
+            Money += value;
         }
 
         public void TowerPurchased(Tower tower)
@@ -88,13 +88,12 @@ namespace VirusTowerDefense.ScoreController
 
             }
 
-            Score -= value;
-
+            Money -= value;
         }
 
-            public void WaveComplete(int waveNumber)
+        public void WaveComplete(int waveNumber)
         {
-            Score += 500;
+            Money += 500;
         }
     }
 }
