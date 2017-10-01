@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VirusTowerDefense.Models.Enemy;
+﻿using VirusTowerDefense.Models.Enemy;
+using VirusTowerDefense.Models.Towers;
 
 namespace VirusTowerDefense.ScoreController
 {
@@ -67,6 +63,11 @@ namespace VirusTowerDefense.ScoreController
             }
 
             Score += value;
+        }
+
+        public void TowerPurchased(Tower tower)
+        {
+
         }
 
         public void WaveComplete(int waveNumber)
