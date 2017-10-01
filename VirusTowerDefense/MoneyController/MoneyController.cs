@@ -67,10 +67,32 @@ namespace VirusTowerDefense.ScoreController
 
         public void TowerPurchased(Tower tower)
         {
+            var value = 0;
+
+            switch (tower)
+            {
+                case AntiMalware antiMalware:
+                    value = 5;
+                    break;
+
+                case AntiVirus antiVirus:
+                    value = 10;
+                    break;
+
+                case Firewall firewall:
+                    value = 20;
+                    break;
+
+                default:
+                    break;
+
+            }
+
+            Score -= value;
 
         }
 
-        public void WaveComplete(int waveNumber)
+            public void WaveComplete(int waveNumber)
         {
             Score += 500;
         }
